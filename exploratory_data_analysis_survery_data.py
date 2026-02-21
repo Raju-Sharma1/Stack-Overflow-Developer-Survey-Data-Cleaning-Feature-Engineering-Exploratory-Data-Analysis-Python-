@@ -97,7 +97,6 @@ plt.title("Median Job Satisfaction by Experience Level")
 plt.ylabel("Median Job Satisfaction")
 plt.show()
 
-
 # ================================
 # Distribution Analysis
 # ================================
@@ -106,6 +105,7 @@ plt.show()
 plt.figure(figsize=(8, 5))
 sns.countplot(x="JobSat", data=df)
 plt.title("Distribution of Job Satisfaction (JobSat)")
+plt.grid(axis="y", linestyle="--")
 plt.show()
 
 # Remote work preference distribution
@@ -158,6 +158,8 @@ sns.barplot(
 )
 plt.xticks(rotation=45)
 plt.title("Top Programming Languages by Region")
+plt.grid(axis="y", linestyle="--")
+plt.tight_layout()
 plt.show()
 
 
@@ -188,6 +190,16 @@ plt.show()
 
 # Expanding multi-employment responses for accurate cross-tabulation
 ed_emp = df[["EdLevel", "Employment"]].copy()
+
+education = {
+    "Bachelor’s degree (B.A., B.S., B.Eng., etc.)": "Bachelor’s degree",
+    "Master’s degree (M.A., M.S., M.Eng., MBA, etc.)" : "Master’s degree",
+    "Some college/university study without earning a degree": "Some college/university study",
+    "Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)" : "High-School",
+    "Professional degree (JD, MD, Ph.D, Ed.D, etc.)" : "Professional degree (Ph.D)",
+    "Associate degree (A.A., A.S., etc.)" : "Associate degree"
+              }
+ed_emp["EdLevel"] = ed_emp["EdLevel"].replace(education)
 ed_emp["Employment"] = ed_emp["Employment"].str.split(";")
 ed_emp = ed_emp.explode("Employment")
 
@@ -206,6 +218,7 @@ edu_emp_crosstab.plot(
 )
 
 plt.title("Education Level vs Employment Type")
-plt.xticks(rotation=45)
+plt.xticks(rotation=90)
 plt.legend(title="Employment Type", bbox_to_anchor=(1.05, 1))
+plt.tight_layout()
 plt.show()
