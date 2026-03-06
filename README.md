@@ -1,6 +1,6 @@
-# 📊 Stack Overflow Developer Survey Analysis
+# Stack Overflow Developer Survey Analysis
 
-## 📌 Project Overview
+## Project Overview
 This project performs end-to-end data cleaning, transformation, and exploratory data analysis (EDA) on the Stack Overflow Developer Survey dataset using Python.
 
 The objective is to analyze developer trends related to:
@@ -12,7 +12,7 @@ The objective is to analyze developer trends related to:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Python
 - Pandas
 - NumPy
@@ -21,7 +21,7 @@ The objective is to analyze developer trends related to:
 
 ---
 
-## 🧹 Data Cleaning & Feature Engineering
+## Data Cleaning & Feature Engineering
 - Handled missing values using median and mode imputation
 - Converted categorical experience values into numeric format
 - Created new feature: `YearsCodeProLevel`
@@ -31,28 +31,28 @@ The objective is to analyze developer trends related to:
 
 ---
 
-## 📈 Exploratory Data Analysis Performed
+## Exploratory Data Analysis Performed
 
-### 🔹 Experience vs Job Satisfaction
+###  Experience vs Job Satisfaction
 - Calculated median job satisfaction by experience range
 - Visualized satisfaction trends across experience levels
 
-### 🔹 Remote Work Preferences
+###  Remote Work Preferences
 - Analyzed distribution of remote, hybrid, and on-site work
 
-### 🔹 Programming Languages by Region
+###  Programming Languages by Region
 - Identified top 5 countries
 - Extracted top 5 programming languages per country
 
-### 🔹 Experience vs Satisfaction Correlation
+###  Experience vs Satisfaction Correlation
 - Scatter plot analysis of experience and satisfaction score
 
-### 🔹 Education vs Employment Type
+###  Education vs Employment Type
 - Created stacked bar chart using cross-tabulation
 
 ---
 
-## 🎯 Key Skills Demonstrated
+##  Key Skills Demonstrated
 - Data Cleaning & Imputation
 - Feature Engineering
 - Handling Multi-Valued Columns
@@ -62,12 +62,12 @@ The objective is to analyze developer trends related to:
 
 ---
 
-## 🚀 Outcome
+##  Outcome
 The final cleaned dataset is structured, analysis-ready, and suitable for further modeling or advanced analytics.
 
 This project demonstrates practical data preprocessing and analytical skills using a real-world developer survey dataset.
 
-## 📚 Dataset Source
+##  Dataset Source
 
 This project uses the Stack Overflow Developer Survey dataset.
 
